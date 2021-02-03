@@ -14,12 +14,12 @@ a {
     color: $white;
 }
 
-// .py-6 {
-//     padding: 6rem 0;
-// }
+.py-6 {
+    padding: 6rem 0;
+}
 
 /*=============================================
-=            Hero            =
+=            Header            =
 =============================================*/
 .header {
     @include backImage($gradient-0, "../images/hero.jpg");
@@ -142,4 +142,39 @@ a {
     border-radius: 10px;
     margin-right: 20px;
 }
-/*=====  End of Hero  ======*/
+/*=====  End of Header  ======*/
+/*=============================================
+=            Features Section            =
+=============================================*/
+.h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h2:after {
+    content: "";
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    border-bottom: 5px solid $secondary;
+}
+
+.features-text {
+    padding: 1rem 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.features-content {
+    @include flex;
+    padding: 0.5rem 0;
+}
+
+.features-item {
+    padding: 0 10px;
+}
+
+.fas {
+    margin-bottom: 10px;
+}
+/*=====  End of Features Section  ======*/
