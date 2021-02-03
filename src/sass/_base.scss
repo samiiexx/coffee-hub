@@ -5,7 +5,7 @@
 body {
     font-family: $font-family;
     font-weight: $font-normal;
-    color: $white;
+    color: $dark;
     line-height: 1.35;
 }
 
@@ -13,3 +13,133 @@ a {
     text-decoration: none;
     color: $white;
 }
+
+// .py-6 {
+//     padding: 6rem 0;
+// }
+
+/*=============================================
+=            Hero            =
+=============================================*/
+.header {
+    @include backImage($gradient-0, "../images/hero.jpg");
+    @include background;
+}
+
+// Navigation Styles
+.nav {
+    padding: 1rem 0;
+    @include flex;
+}
+
+.logo {
+    height: auto;
+    width: 70px;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.hamburger-menu {
+    display: none;
+    @include media-max("md") {
+        font-size: 2rem;
+        color: $white;
+        cursor: pointer;
+        position: relative;
+        z-index: 1500;
+        display: block;
+    }
+    .fa-times {
+        @include media-max("md") {
+            display: none;
+        }
+    }
+}
+
+.menu-open .hamburger-menu .fa-times {
+    @include media-max("md") {
+        display: block;
+    }
+}
+
+.menu-open .hamburger-menu .fa-bars {
+    @include media-max("md") {
+        display: none;
+    }
+}
+
+.nav-list {
+    list-style-type: none;
+    display: inherit;
+    position: relative;
+    flex-direction: row;
+    justify-content: initial;
+    opacity: 1;
+    transform: scale(1);
+    @include media-max("md") {
+        opacity: 0;
+        transition: opacity $normal;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include flex(center);
+        flex-direction: column;
+        z-index: 1400;
+        opacity: 0;
+        transform: scale(0);
+        transition: opacity $normal;
+        background-color: $dark;
+        overflow: hidden;
+    }
+}
+
+.menu-open .nav-list {
+    @include media-max("md") {
+        padding-left: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.nav-link {
+    color: $primary;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+    @include media-max("md") {
+        display: block;
+        font-size: 2rem;
+        padding: 1rem 0 0.2rem;
+        text-transform: uppercase;
+        font-weight: $font-normal;
+    }
+    &:hover {
+        border-bottom: 2px solid $primary;
+    }
+}
+// end of Navigation
+
+.hero {
+    @include flex(center);
+    min-height: 90vh;
+}
+
+.h1 {
+    color: $white;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+.btn-primary,
+.btn-primary-outline {
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+/*=====  End of Hero  ======*/

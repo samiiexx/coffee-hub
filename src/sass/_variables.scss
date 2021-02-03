@@ -4,8 +4,8 @@
 
 /* Colors */
 
-$primary: #c99502;
-$secondary: #d8ac17;
+$primary: #faae7b;
+$secondary: #cc8b79;
 $success: #06af52;
 $danger: #ff6347;
 $warning: #ffc107;
@@ -14,21 +14,10 @@ $dark: #060606;
 $grey: #565655;
 $white: #ffffff;
 
-/* Gradients */
-
-$gradient-0: 90deg, #000000 10%, rgba(0, 0, 0, 0.2) 100%,
-    rgba(0, 0, 0, 0.4) 100%;
-$gradient-1: 90deg, #000000 11%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 70%,
-    rgba(0, 0, 0, 0) 100%;
-$gradient-2: rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8);
-$gradient-3: rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7);
-$gradient-4: 90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 100%;
-$gradient-5: rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0);
-
 /* Typography */
-$font-family: "Ubuntu", sans-serif;
-$font-normal: 400;
-$font-bold: 700;
+$font-family: "Josefin Sans", sans-serif;
+$font-normal: 300;
+$font-bold: 500;
 
 /*=====  End of Theme  ======*/
 
@@ -51,3 +40,10 @@ $normal: 0.4s ease-out;
 $slow: 0.6s ease-out;
 
 /*=====  End of Misc Config  ======*/
+
+/*=============================================
+=            Gradients            =
+=============================================*/
+$gradient-0: rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5);
+
+/*=====  End of Gradients  ======*/
