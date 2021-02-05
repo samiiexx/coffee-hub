@@ -133,14 +133,15 @@ a {
 =============================================*/
 .h2-align {
     text-align: center;
-    &:after {
-        content: "";
-        display: block;
-        width: 70px;
-        margin: 0 auto;
-        border-bottom: 5px solid $secondary;
-        padding-top: 1.5rem;
-    }
+}
+
+.bar:after {
+    content: "";
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    border-bottom: 5px solid $secondary;
+    padding-top: 1.5rem;
 }
 
 .features-text {
@@ -185,3 +186,58 @@ a {
     }
 }
 /*=====  End of Products  ======*/
+
+/*=============================================
+=            CTA            =
+=============================================*/
+.cta {
+    @include backImage($gradient-0, "../images/divider.jpg");
+    @include background;
+    .h2 {
+        color: $white;
+    }
+}
+
+.cta-app {
+    text-align: center;
+}
+.app-img {
+    width: 200px;
+}
+
+.cta-content {
+    @include flex;
+}
+
+.cta-item {
+    flex-basis: 30%;
+}
+
+.cta-item:nth-child(1):before {
+    content: "1 ";
+}
+
+.cta-item:nth-child(2):before {
+    content: "2 ";
+}
+
+.cta-item:nth-child(3):before {
+    content: "3 ";
+}
+
+.cta-item:nth-child(-n + 3):before {
+    color: $secondary;
+    border: 2px solid $secondary;
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-text {
+    color: $white;
+}
+/*=====  End of CTA  ======*/
