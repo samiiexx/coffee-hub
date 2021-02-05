@@ -14,12 +14,8 @@ a {
     color: $white;
 }
 
-// .py-6 {
-//     padding: 6rem 0;
-// }
-
 /*=============================================
-=            Hero            =
+=            Header            =
 =============================================*/
 .header {
     @include backImage($gradient-0, "../images/hero.jpg");
@@ -28,17 +24,12 @@ a {
 
 // Navigation Styles
 .nav {
-    padding: 1rem 0;
     @include flex;
 }
 
 .logo {
     height: auto;
     width: 70px;
-}
-
-.nav-item {
-    padding: 1rem;
 }
 
 .hamburger-menu {
@@ -129,17 +120,68 @@ a {
     min-height: 90vh;
 }
 
-.h1 {
-    color: $white;
+.title {
     text-transform: uppercase;
-    margin: 2rem 0;
+    & > .hero-text {
+        color: $white;
+    }
 }
 
-.btn-primary,
-.btn-primary-outline {
-    text-transform: uppercase;
-    font-weight: $font-bold;
-    border-radius: 10px;
-    margin-right: 20px;
+/*=====  End of Header  ======*/
+/*=============================================
+=            Features Section            =
+=============================================*/
+.h2-align {
+    text-align: center;
+    &:after {
+        content: "";
+        display: block;
+        width: 70px;
+        margin: 0 auto;
+        border-bottom: 5px solid $secondary;
+        padding-top: 1.5rem;
+    }
 }
-/*=====  End of Hero  ======*/
+
+.features-text {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.features-content {
+    @include flex;
+}
+
+.features-item {
+    padding: 0 10px;
+}
+
+/*=====  End of Features Section  ======*/
+.divider {
+    @include backImage($gradient-1, "../images/divider.jpg");
+    @include background;
+    min-height: 60vh;
+}
+/*=============================================
+=            Products            =
+=============================================*/
+.products-showcase {
+    width: 100%;
+    @include flex(center);
+    flex-wrap: wrap;
+}
+
+.product-item {
+    flex-basis: 33%;
+    margin: 0.2rem 0;
+}
+
+.product-img {
+    @extend %img-fluid;
+    max-width: 370px;
+    &:hover {
+        transform: scale(0.9);
+        transition: all $slow;
+    }
+}
+/*=====  End of Products  ======*/

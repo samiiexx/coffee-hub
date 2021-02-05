@@ -62,9 +62,9 @@ $media-types-retina: (
     }
 }
 
-@mixin btn($border: 2px, $radius: 0px) {
+@mixin btn($border: 2px, $radius: 10px) {
     display: inline-block;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
     outline: none;
     border-width: $border;

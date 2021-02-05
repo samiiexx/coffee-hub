@@ -108,6 +108,12 @@ $spacers: (
 /*=============================================
 =            Buttons            =
 =============================================*/
+.btn-primary,
+.btn-primary-outline {
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    line-height: initial;
+}
 
 .btn-primary {
     @include btn-solid($primary, $white);
