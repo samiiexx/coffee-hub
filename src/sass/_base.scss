@@ -20,6 +20,7 @@ a {
 .header {
     @include backImage($gradient-0, "../images/hero.jpg");
     @include background;
+    background-attachment: fixed;
 }
 
 // Navigation Styles
@@ -246,10 +247,6 @@ a {
 /*=============================================
 =            Cities            =
 =============================================*/
-.cities {
-    background-color: lighten($grey, 60%);
-}
-
 .city-card {
     flex-basis: 24%;
 }
@@ -257,4 +254,46 @@ a {
 .city-img {
     @extend %img-fluid;
 }
+
+.city-link:hover {
+    color: $secondary;
+}
 /*=====  End of Cities  ======*/
+
+/*=============================================
+=            Reviews            =
+=============================================*/
+.reviews {
+    @include backImage($gradient-0, "../images/review-img.jpg");
+    @include background;
+    background-attachment: fixed;
+    color: $white;
+}
+
+.reviews-group {
+    @include flex;
+}
+
+.quote {
+    font-style: italic;
+    position: relative;
+    &:before {
+        content: "\201c";
+        font-size: 3rem;
+        display: block;
+        margin-bottom: -30px;
+    }
+}
+
+.cite {
+    font-size: 0.9rem;
+    display: block;
+}
+
+.review-img {
+    height: auto;
+    width: 70px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+/*=====  End of Reviews  ======*/
