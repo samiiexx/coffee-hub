@@ -11,7 +11,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $white;
+    color: $dark;
 }
 
 /*=============================================
@@ -166,9 +166,10 @@ a {
 /*=============================================
 =            Products            =
 =============================================*/
-.products-showcase {
+.products-showcase,
+.cities-group {
     width: 100%;
-    @include flex(center);
+    @include flex;
     flex-wrap: wrap;
 }
 
@@ -241,3 +242,19 @@ a {
     color: $white;
 }
 /*=====  End of CTA  ======*/
+
+/*=============================================
+=            Cities            =
+=============================================*/
+.cities {
+    background-color: lighten($grey, 60%);
+}
+
+.city-card {
+    flex-basis: 24%;
+}
+
+.city-img {
+    @extend %img-fluid;
+}
+/*=====  End of Cities  ======*/
