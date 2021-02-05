@@ -270,7 +270,8 @@ a {
     color: $white;
 }
 
-.reviews-group {
+.reviews-group,
+.plans-group {
     @include flex;
 }
 
@@ -297,3 +298,30 @@ a {
     border-radius: 50%;
 }
 /*=====  End of Reviews  ======*/
+
+/*=============================================
+=            Plans            =
+=============================================*/
+.plans {
+    background-color: lighten($grey, 60%);
+}
+
+.plan-card {
+    background-color: $white;
+    border-radius: 5px;
+}
+
+.plan-price {
+    font-size: 2.5rem;
+}
+
+.plan-price-cup {
+    font-size: 1.5rem;
+}
+
+/*=====  End of Plans  ======*/
+/*=============================================
+=            Contact Form            =
+=============================================*/
+
+/*=====  End of Contact Form  ======*/
