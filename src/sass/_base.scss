@@ -127,6 +127,7 @@ a {
         border-bottom: 2px solid $primary;
     }
 }
+
 // end of Navigation
 
 .hero {
@@ -389,7 +390,7 @@ a {
 =            Contact Form            =
 =============================================*/
 .fieldset {
-    background-color: $primary;
+    background-color: lighten($grey, 60%);
     border: solid 1px $grey;
     border-radius: 6px;
     width: 80%;
