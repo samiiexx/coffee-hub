@@ -1,5 +1,5 @@
 # Coffee Hub Website
-Website project for Coffee Hub. Available at: 
+Test project for Coffee Hub. Available at: 
 []()
 
 ![Coffee Hub](screenshot.jpg)
